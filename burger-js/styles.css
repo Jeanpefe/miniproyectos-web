@@ -4,7 +4,14 @@
 	box-sizing: border-box;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 .main_header {
+	height: 5rem;
 	background-color: green;
 	display: flex;
 	align-items: center;
@@ -14,9 +21,49 @@
 
 .main_header__burger {
 	width: 3rem;
+	cursor: pointer;
 }
 
 .landing {
 	background-color: pink;
-	height: 100;
+	flex: 1;
+}
+
+.burger_sidebar {
+	background-color: lightblue;
+	width: 12rem;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 1rem 1.5rem;
+}
+
+.burger_sidebar__title {
+	margin-bottom: 1.5rem;
+}
+
+.burger_sidebar__options {
+	display: flex;
+	flex-flow: column;
+	gap: 1.5rem;
+}
+.burger_sidebar__settings {
+	list-style-type: none;
+}
+
+.burger_sidebar__settings:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.burger_sidebar__close {
+	margin-top: 3rem;
+	background-color: purple;
+	color: red;
+	cursor: pointer;
+}
+}
+.hide {
+	display: none;
 }
