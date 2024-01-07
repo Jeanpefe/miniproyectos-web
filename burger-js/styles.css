@@ -34,7 +34,7 @@ body {
 	width: 12rem;
 	position: fixed;
 	right: 0;
-	top: 0;
+	top: 300;
 	bottom: 0;
 	padding: 1rem 1.5rem;
 }
@@ -64,6 +64,11 @@ body {
 	cursor: pointer;
 }
 }
+
+.show {
+	top: 0;
+}
+
 .hide {
-	display: none;
+	top: 0;
 }
