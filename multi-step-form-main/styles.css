@@ -6,20 +6,33 @@
 
 
 .steps__list {
+	padding: 2rem;
+	background-color: purple;
+	background-image: url("./assets/images/bg-sidebar-mobile.svg");
 	display: flex;
+	height: 10.7rem;
 	list-style-type: none;
-	gap: 2rem;
+	gap: 1rem;
 	justify-content: center;
+	align-items: top;
 }
 
+.steps {
+	margin: 0;
+}
 .steps__button {
 	text-align: center;
 	background-color: red;
-	width: 1.7rem;
-	height: 1.7rem;
+	width: 2.5rem;
+	height: 2.5rem;
 	border-radius: 3rem;
 	border: 2px solid green;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.personal {
+	background-color: pink;
+	padding: 2rem 2rem;
 }
