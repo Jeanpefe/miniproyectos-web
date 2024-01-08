@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.steps__list {
+	display: flex;
+	list-style-type: none;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.steps__button {
+	text-align: center;
+	background-color: red;
+	width: 1.7rem;
+	height: 1.7rem;
+	border-radius: 3rem;
+	border: 2px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
