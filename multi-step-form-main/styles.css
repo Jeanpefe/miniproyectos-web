@@ -1,9 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+	--Marineblue: hsl(213, 96%, 18%);
+	--Purplishblue: hsl(243, 100%, 62%);
+	--Pastelblue: hsl(228, 100%, 84%);
+	--Lightblue: hsl(206, 94%, 87%);
+	--Strawberryred: hsl(354, 84%, 57%);	
+	--Coolgray: hsl(231, 11%, 63%);
+	--Lightgray: hsl(229, 24%, 87%);
+	--Magnolia: hsl(217, 100%, 97%);
+	--Alabaster: hsl(231, 100%, 99%);
+	--White: hsl(0, 0%, 100%);
+}
+
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Outfit, sans-serif;
 	box-sizing: border-box;
 }
-
 
 .steps__list {
 	padding: 2rem;
@@ -35,4 +50,10 @@
 .personal {
 	background-color: pink;
 	padding: 2rem 2rem;
+	margin: 1rem;
+	border-radius: 1rem;
+}
+
+.personal__list {
+	list-style-type: none;
 }
