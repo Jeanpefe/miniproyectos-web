@@ -30,12 +30,12 @@ body {
 }
 
 .burger_sidebar {
+	transition: 0.4s;
 	background-color: lightblue;
 	width: 12rem;
 	position: fixed;
-	right: 0;
+	right: -300px;
 	top: 0;
-	display: none;
 	bottom: 0;
 	padding: 1rem 1.5rem;
 }
@@ -66,9 +66,5 @@ body {
 }
 
 .show {
-	display: block;
-}
-
-.hide {
-	top: 0;
+	right: 0;
 }
