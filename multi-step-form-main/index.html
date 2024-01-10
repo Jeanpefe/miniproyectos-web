@@ -32,7 +32,7 @@
   <main class="personal">
     <h1 class="personal__header">Personal Info</h1>
     <p class="personal__description">Please provide your name, email address and phone number.</p>
-    <form class="personal__form">
+    <form class="personal__form" action="" method="post">
       <ul class="personal__list">
         <li class="personal__item">
           <h2 class="personal__title">Name</h2>
@@ -40,11 +40,11 @@
         </li>
         <li class="personal__item">
           <h2 class="personal__title">Email Address</h2>
-          <input class="personal__input" type="email" placeholder="e.g. stephenking@lorem.com" />
+          <input class="personal__input" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="e.g. stephenking@lorem.com" title="Ingresa un email" required/>
         </li>
         <li class="personal__item">
           <h2 class="personal__title">Phone Number</h2>
-          <input class="personal__input" type="text" placeholder="e.g. +1 234 567 890" />
+          <input class="personal__input" type="text" placeholder="e.g. +1 234 567 890" pattern="\d{3}[\s\-]?\d{3}[\s\-]?\d{4}" title="Ingresa un formato de número de teléfono válido" required/>
         </li>
       </ul>
     </form>
