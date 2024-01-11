@@ -72,7 +72,7 @@ body {
 	display: none;
 }
 
-.personal__header {
+.personal__header, .monthly__header {
 	color: var(--Marineblue);
 	font-size: 1.5rem;
 	font-weight: 700;
@@ -92,7 +92,7 @@ body {
 	margin-bottom: 0.2rem;
 }
 
-.personal__description {
+.personal__description, .monthly__description {
 	color: var(--Coolgray);
 	margin: 1rem 0rem;
 }
@@ -127,4 +127,8 @@ body {
 	border: 0px;
 	font-size: 0.85rem;
 	font-weight: ;
+}
+
+.monthly__item--container {
+	background-color: green;
 }
