@@ -124,30 +124,48 @@ body {
 	color: white;
 	border-radius: 0.2rem;
 	padding: 0.75rem 0.85rem;
-	border: 0rem;
+	border: 0;
 	font-size: 0.85rem;
 	font-weight: ;
 }
 
-.monthly__item--container input[type="radio"] {
+.monthly__item--radio {
   display: none;
 }
 
-/* Estilo para el "li" que simulará el radio button */
 .monthly__item--container {
   cursor: pointer;
-  background-color: pink;
   border-radius: 0.2rem;
 }
 
 .monthly__item--radio_label {
+	width: 100%;
 	padding: 1.2rem;
+  border-radius: 0.5rem;
   display: flex;
-  border: 4px solid white;
+  gap: 1rem;
+  align-items: center;
+  border: 0.1rem solid var(--Lightgray);
 }
 
-/* Estilo cuando el "li" está seleccionado */
 .monthly__item--radio:checked + label {
-  border: 4px solid green;
-  border-radius: 0.2rem;
+  border: 0.1rem solid var(--Purplishblue);
+  border-radius: 0.5rem;
+  background-color: hsl(243, 100%, 62%, 5%);
+}
+
+.monthly__image {
+	width: 3rem;
+}
+
+.radio_label--text {
+	display: flex;
+	flex-flow: column;
+}
+
+.personal__title {
+	color: var(--Marineblue);
+	font-size: 0.8rem;
+	font-weight: 500;
+	margin-bottom: 0.2rem;
 }
