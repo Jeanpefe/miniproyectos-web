@@ -43,6 +43,11 @@ body {
 .steps {
 	margin: 0;
 }
+
+.steps__info--desktop {
+	display: none;
+}
+
 .steps__button {
 	text-align: center;
 	background-color: transparent;
@@ -55,12 +60,16 @@ body {
 	align-items: center;
 }
 
-.personal {
+.content {
 	background-color: white;
 	padding: 2rem 1.5rem;
 	margin: 1rem;
 	border-radius: 1rem;
 	transform: translateY(-5.5rem);
+}
+
+.personal {
+	display: none;
 }
 
 .personal__header {

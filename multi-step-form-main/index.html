@@ -20,36 +20,81 @@
 
   <header class="steps">
     <ul class="steps__list">
-      <li class="steps__button">1</li>
-      <li class="steps__button">2</li>
-      <li class="steps__button">3</li>
-      <li class="steps__button">4</li>
+      <div class="steps__info">
+        <div class="steps__info--desktop">
+          <h3>STEP 1</h3>
+          <p>YOUR INFO</p>
+        </div>
+        <li class="steps__button">1</li>
+      </div>
+      <div class="steps__info">
+        <div class="steps__info--desktop">
+          <h3>STEP 2</h3>
+          <p>SELECT PLAN</p>
+        </div>
+        <li class="steps__button">2</li>
+      </div>
+      <div class="steps__info">
+        <div class="steps__info--desktop">
+          <h3>STEP 3</h3>
+          <p>ADD-ONS</p>
+        </div>
+        <li class="steps__button">3</li>
+      </div>
+      <div class="steps__info">
+        <div class="steps__info--desktop">
+          <h3>STEP 4</h3>
+          <p>SUMMARY</p>
+        </div>
+        <li class="steps__button">4</li>
+      </div>
     </ul>
   </header>
   <!-- Sidebar end -->
 
   <!-- Step 1 start -->
-  <main class="personal">
-    <h1 class="personal__header">Personal Info</h1>
-    <p class="personal__description">Please provide your name, email address and phone number.</p>
-    <form class="personal__form" action="" method="post">
-      <ul class="personal__list">
-        <li class="personal__item">
-          <h2 class="personal__title">Name</h2>
-          <input class="personal__input" type="text" placeholder="e.g. Stephen King" />
-        </li>
-        <li class="personal__item">
-          <h2 class="personal__title">Email Address</h2>
-          <input class="personal__input" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="e.g. stephenking@lorem.com" title="Ingresa un email" required/>
-        </li>
-        <li class="personal__item">
-          <h2 class="personal__title">Phone Number</h2>
-          <input class="personal__input" type="text" placeholder="e.g. +1 234 567 890" pattern="\d{3}[\s\-]?\d{3}[\s\-]?\d{4}" title="Ingresa un formato de número de teléfono válido" required/>
-        </li>
-      </ul>
-    </form>
+  <main class="content">
+    <section class="personal">
+      <h1 class="personal__header">Personal Info</h1>
+      <p class="personal__description">Please provide your name, email address and phone number.</p>
+      <form class="personal__form" action="" method="post">
+        <ul class="personal__list">
+          <li class="personal__item">
+            <h2 class="personal__title">Name</h2>
+            <input class="personal__input" type="text" placeholder="e.g. Stephen King" />
+          </li>
+          <li class="personal__item">
+            <h2 class="personal__title">Email Address</h2>
+            <input class="personal__input" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="e.g. stephenking@lorem.com" title="Ingresa un email" required/>
+          </li>
+          <li class="personal__item">
+            <h2 class="personal__title">Phone Number</h2>
+            <input class="personal__input" type="text" placeholder="e.g. +1 234 567 890" pattern="\d{3}[\s\-]?\d{3}[\s\-]?\d{4}" title="Ingresa un formato de número de teléfono válido" required/>
+          </li>
+        </ul>
+      </form>
+    </section>
+    <section class="monthly">
+      <h1 class="monthly__header">Select your plan</h1>
+      <p class="monthly__description">You have the option of monthly or yearly billing.</p>
+      <form class="monthly__form" action="" method="post">
+        <ul class="monthly__list">
+          <li class="personal__item">
+            <h2 class="personal__title">Name</h2>
+            <input class="personal__input" type="text" placeholder="e.g. Stephen King" />
+          </li>
+          <li class="personal__item">
+            <h2 class="personal__title">Email Address</h2>
+            <input class="personal__input" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="e.g. stephenking@lorem.com" title="Ingresa un email" required/>
+          </li>
+          <li class="personal__item">
+            <h2 class="personal__title">Phone Number</h2>
+            <input class="personal__input" type="text" placeholder="e.g. +1 234 567 890" pattern="\d{3}[\s\-]?\d{3}[\s\-]?\d{4}" title="Ingresa un formato de número de teléfono válido" required/>
+          </li>
+        </ul>
+      </form>
+    </section>
   </main>
-
   <footer class="next_step">
     <button class="next_step__button">Next Step</button>
   </footer>
