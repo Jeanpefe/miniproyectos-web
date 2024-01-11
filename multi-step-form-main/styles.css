@@ -133,6 +133,9 @@ body {
   display: none;
 }
 
+.monthly__description {
+	max-width: 17rem;
+}
 .monthly__item--container {
   cursor: pointer;
   border-radius: 0.2rem;
