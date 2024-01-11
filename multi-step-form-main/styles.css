@@ -163,9 +163,15 @@ body {
 	flex-flow: column;
 }
 
-.personal__title {
+.radio_label--title {
 	color: var(--Marineblue);
-	font-size: 0.8rem;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.radio_label--price {
+  color: var(--Coolgray);
+  margin-top: 0.1rem;
+	font-size: 0.9rem;
 	font-weight: 500;
-	margin-bottom: 0.2rem;
 }
