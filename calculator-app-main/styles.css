@@ -1,0 +1,25 @@
+:root {
+    --main_background: hsl(222, 26%, 31%);
+    --keypad_background: hsl(223, 31%, 20%);
+    --screen_background: hsl(224, 36%, 15%);
+    --del_key_background: hsl(225, 21%, 49%);
+    --del_key_shadow: hsl(224, 28%, 35%);
+    --result_key_background: hsl(6, 63%, 50%);
+    --result_key_shadow: hsl(6, 70%, 34%);
+    --number_key_background: hsl(30, 25%, 89%);
+    --number_key_shadow: hsl(28, 16%, 65%);
+    --number_color: hsl(221, 14%, 31%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main_background);
+}
+
+.calc_header__name {
+  color: white;
+}
