@@ -116,3 +116,49 @@ body {
   background-color: var(--result_key_background);
   color: var(--screen_number);
 }
+
+
+@import "compass/css3";
+
+label {
+  display: inline-block;
+  text-align: center;
+  width: 66px;
+  height: 4em;
+  margin-bottom: -2em;
+  z-index:2;
+  position:relative;
+  cursor: pointer;
+}
+.slider {
+  width:4rem;
+  height: 1.5rem;
+  background-color: var(--keypad_background);
+  position: relative;
+  border-radius: 2rem
+}
+.marker {
+  height: 1.1em;
+  width: 1.1em;
+  margin-left: 0.3em;
+  top: 0.2rem;
+  background-color: var(--result_key_background);
+  position:absolute;
+  left: 0%;
+  transition: left 0.5s ease-in-out;
+  border-radius: 50%;
+}
+
+#b:checked ~ .slider .marker {
+  left: 50%;
+}
+
+#c:checked ~ .slider .marker {
+  left: 100%;
+}
+
+.calc_header__slide {
+  input {
+    display: none;  
+  }
+}
