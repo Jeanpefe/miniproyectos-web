@@ -71,7 +71,10 @@ body {
   grid-gap: 1.5rem;
 }
 
-.keys__button, .keys__button--del, .keys__button--reset, .keys__button--equals {
+.keys__button,
+.keys__button--del,
+.keys__button--reset,
+.keys__button--equals {
   width: 100%;
   height: 4rem;
   background-color: var(--number_key_background);
@@ -84,14 +87,21 @@ body {
 }
 
 .keys__button--reset {
-    grid-column: 1 / 3;
-    width: 100%;
-    background-color: var(--del_key_background);
-    color: var(--screen_number);
+  grid-column: 1 / 3;
+  width: 100%;
+  background-color: var(--del_key_background);
+  color: var(--screen_number);
 }
 
+.keys__button--del {
+  width: 100%;
+  background-color: var(--del_key_background);
+  color: var(--screen_number);
+} 
+
 .keys__button--equals {
-    grid-column: 3 / 5;
-    width: 100%;
-    background-color: var(--result_key_background);
+  grid-column: 3 / 5;
+  width: 100%;
+  background-color: var(--result_key_background);
+  color: var(--screen_number);
 }
