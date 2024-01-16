@@ -31,7 +31,6 @@ body {
 
 .calculator {
   width: 32rem;
-  background-color: lightcoral;
   height: 50rem;
 }
 .calc_header {
@@ -84,8 +83,20 @@ body {
   color: var(--number_color);
   border-radius: 0.5rem;
   font-size: 2.5rem;
+  position: relative;
 }
 
+.keys__button {
+  border-bottom:var(--number_key_shadow) 0.3rem solid;  
+}
+
+.keys__button--del, .keys__button--reset {
+  border-bottom:var(--del_key_shadow) 0.3rem solid;  
+}
+
+.keys__button--equals {
+  border-bottom:var(--result_key_shadow) 0.3rem solid;  
+}
 .keys__button--reset {
   grid-column: 1 / 3;
   width: 100%;
