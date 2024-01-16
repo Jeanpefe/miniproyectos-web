@@ -34,9 +34,9 @@ body {
   height: 50rem;
 }
 .calc_header {
-  background-color: lightgreen;
   display: flex;
   padding: 0.5rem 1.2rem;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
@@ -150,11 +150,10 @@ body {
 
 .calc_header__selector {
   display: flex;
+  align-items: center;
   gap: 2rem;
   span {
     color: var(--screen_number);
-    align-self: end;
-
     background-color: lightblue;
   }
 
@@ -170,7 +169,7 @@ body {
 
 .calc_header__slide {
   background-color: lightcoral;
-
+  margin-bottom: 1.2rem;
   input {
     display: none;  
   }
