@@ -149,25 +149,37 @@ body {
 }
 
 .calc_header__selector {
+  display: flex;
+  gap: 2rem;
   span {
     color: var(--screen_number);
+    align-self: end;
+
+    background-color: lightblue;
   }
 
   label {
     color: var(--screen_number);
     display: inline-block;
     text-align: center;
-    width: 66px;
-    height: 4em;
     margin-bottom: -2em;
     z-index:2;
-    position:relative;
     cursor: pointer;
   }
 }
 
 .calc_header__slide {
+  background-color: lightcoral;
+
   input {
     display: none;  
   }
+}
+
+.slide__numbers {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.2rem;
+  font-size: 0.9rem;
 }
