@@ -154,7 +154,6 @@ body {
   gap: 2rem;
   span {
     color: var(--screen_number);
-    background-color: lightblue;
   }
 
   label {
@@ -168,7 +167,6 @@ body {
 }
 
 .calc_header__slide {
-  background-color: lightcoral;
   margin-bottom: 1.2rem;
   input {
     display: none;  
