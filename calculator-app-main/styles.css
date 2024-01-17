@@ -118,7 +118,6 @@ body {
 }
 
 
-@import "compass/css3";
 
 .slide {
   width:4rem;
@@ -132,7 +131,7 @@ body {
   height: 1.1em;
   width: 1.1em;
   margin-left: 0.3em;
-  top: 0.2rem;
+  top: 0.25rem;
   background-color: var(--result_key_background);
   position:absolute;
   left: 0%;
@@ -141,17 +140,17 @@ body {
 }
 
 #b:checked ~ .slide .slide__marker {
-  left: 50%;
+  left: 30%;
 }
 
 #c:checked ~ .slide .slide__marker {
-  left: 100%;
+  left: 57%;
 }
 
 .calc_header__selector {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.2rem;
   span {
     color: var(--screen_number);
   }
@@ -177,6 +176,6 @@ body {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 0.2rem;
+  padding: 0 0.3rem;
   font-size: 0.9rem;
 }
