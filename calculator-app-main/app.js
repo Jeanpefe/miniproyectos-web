@@ -14,5 +14,9 @@ keyButtons.forEach(button => {
             string = ""
             screenText.innerHTML = 0
         }
+        else if (button.className === "keys__button--del") {
+            string = string.slice(0, -1)
+            screenText.innerHTML = string
+        }
     })
 });
