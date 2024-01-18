@@ -1,9 +1,18 @@
 
-var screenText = document.querySelector("screen__text")
+var screenText = document.querySelector(".screen__text")
 //Seleccionamos los botones pulsables
-var keyButtons = document.querySelectorAll(".keys__button")
-
-console.log(keyButtons)
+var keyButtons = document.querySelectorAll(".keys p")
+var operations = ""
+string = ""
 keyButtons.forEach(button => {
-    button.addEventListener("click", () => console.log(button.innerHTML));
+    button.addEventListener("click", () => {
+        if (button.className === "keys__button") {
+            string += button.innerHTML
+            screenText.innerHTML = string
+        }
+        else if (button.className === "keys__button--reset") {
+            string = ""
+            screenText.innerHTML = 0
+        }
+    })
 });
