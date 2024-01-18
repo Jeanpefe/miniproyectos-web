@@ -18,5 +18,8 @@ keyButtons.forEach(button => {
             string = string.slice(0, -1)
             screenText.innerHTML = string
         }
+        else if (button.className === "keys__button--equals") {
+            screenText.innerHTML = eval(string)
+        }
     })
 });
