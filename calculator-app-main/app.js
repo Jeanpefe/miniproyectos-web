@@ -6,11 +6,8 @@ var operations = ""
 string = ""
 keyButtons.forEach(button => {
     button.addEventListener("click", () => {
-        if (button.className === "keys__button") {
-            string += button.innerHTML
-            screenText.innerHTML = string
-        }
-        else if (button.className === "keys__button--reset") {
+
+        if (button.className === "keys__button--reset") {
             string = ""
             screenText.innerHTML = 0
         }
@@ -20,6 +17,11 @@ keyButtons.forEach(button => {
         }
         else if (button.className === "keys__button--equals") {
             screenText.innerHTML = eval(string)
+            string = ""
+        }
+        else {
+            string += button.innerHTML
+            screenText.innerHTML = string
         }
     })
 });
